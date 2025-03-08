@@ -1,4 +1,4 @@
-# # Concessionária de Veículos - Sistema de Gestão
+#  Concessionária de Veículos - Sistema de Gestão
 Este projeto visa otimizar a administração de uma concessionária de veículos, oferecendo uma maneira eficiente de gerenciar carros, clientes, funcionários, vendas, pagamentos e estoque. O sistema tem como objetivo melhorar a organização interna da concessionária e fornecer funcionalidades para facilitar as operações do dia a dia.
 
 Funcionalidades:
@@ -18,4 +18,4 @@ Controle de Estoque
 A funcionalidade de estoque permite o controle da quantidade de veículos disponíveis na concessionária e a atualização conforme as vendas são realizadas.
 
 
-# # Passo a Passo para Executar o Projeto
+#  Passo a Passo para Executar o Projeto
