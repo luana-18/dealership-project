@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Versões</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Versões de Carros</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID Versão</th>
+          <th>ID Modelo</th>
+          <th>Nome da Versão</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let item of resultado) { %>
+          <tr>
+            <td><%= item.id_versao %></td>
+            <td><%= item.id_modelo %></td>
+            <td><%= item.nome_versao %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
+ 
