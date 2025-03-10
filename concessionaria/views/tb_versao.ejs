@@ -1,29 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
-    <title>Versões</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Versões - Concessionária</title>
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
-  <body>
-    <h1>Versões de Carros</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>ID Versão</th>
-          <th>ID Modelo</th>
-          <th>Nome da Versão</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% for (let item of resultado) { %>
+  <body class="bg-light">
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Concessionária</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="carros.html">Carros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="funcionarios.html">Funcionários</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vendas.html">Vendas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagamentos.html">Pagamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estoque.html">Estoque</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div class="container mt-5">
+      <h1 class="text-center mb-4 text-primary">Gerenciar Versões de Carros</h1>
+      <a href="nova_versao.html" class="btn btn-primary mb-4">Adicionar Nova Versão</a>
+
+      <!-- Tabela estilizada com Bootstrap -->
+      <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
           <tr>
-            <td><%= item.id_versao %></td>
-            <td><%= item.id_modelo %></td>
-            <td><%= item.nome_versao %></td>
+            <th>ID Versão</th>
+            <th>ID Modelo</th>
+            <th>Nome da Versão</th>
           </tr>
-        <% } %>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          <% for (let item of resultado) { %>
+            <tr>
+              <td><%= item.id_versao %></td>
+              <td><%= item.id_modelo %></td>
+              <td><%= item.nome_versao %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
- 
