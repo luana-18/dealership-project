@@ -73,3 +73,32 @@ router.get('/tb_versao', (req, res) => {
 
 // Exportando as rotas
 module.exports = router;
+document.getElementById('addCarForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    const model = document.getElementById('model').value;
+    const year = document.getElementById('year').value;
+    const color = document.getElementById('color').value;
+    const price = document.getElementById('price').value;
+  
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `
+      <td>${model}</td>
+      <td>${year}</td>
+      <td>${color}</td>
+      <td>R$ ${price}</td>
+      <td>
+        <button class="btn btn-warning btn-sm">Editar</button>
+        <button class="btn btn-danger btn-sm">Excluir</button>
+      </td>
+    `;
+  
+    document.getElementById('carTable').appendChild(newRow);
+  
+    // Fechar o modal após adicionar o carro
+    var myModal = new bootstrap.Modal(document.getElementById('addCarModal'));
+    myModal.hide();
+    
+    // Limpar o formulário
+    document.getElementById('addCarForm').reset();
+  });
