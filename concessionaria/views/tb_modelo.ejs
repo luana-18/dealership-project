@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelos de Carros</title>
-    <!-- Link do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-light">
-
-    <div class="container mt-5">
-      <h1 class="text-center mb-4 text-primary">Modelos de Carros</h1>
-
-      <!-- Tabela estilizada com Bootstrap -->
-      <table class="table table-bordered table-striped table-hover">
-        <thead class="table-dark">
-          <tr>
-            <th>ID Modelo</th>
-            <th>Nome do Modelo</th>
-            <th>Marca</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% for (let item of resultado) { %>
-            <tr>
-              <td><%= item.id_modelo %></td>
-              <td><%= item.nome_modelo %></td>
-              <td><%= item.marca %></td>
-            </tr>
-          <% } %>
-        </tbody>
-      </table>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Modelos - Concessionária</title>
+  <!-- Link do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Concessionária</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="carros.html">Carros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clientes.html">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="funcionarios.html">Funcionários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vendas.html">Vendas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagamentos.html">Pagamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="estoque.html">Estoque</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Script do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4 text-primary">Gerenciar Modelos</h1>
+
+    <!-- Tabela estilizada com Bootstrap -->
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID Modelo</th>
+          <th>Nome do Modelo</th>
+          <th>Marca</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let item of resultado) { %>
+          <tr>
+            <td><%= item.id_modelo %></td>
+            <td><%= item.nome_modelo %></td>
+            <td><%= item.marca %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Script do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
