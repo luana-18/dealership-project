@@ -24,7 +24,7 @@ VERIFICAR O NODE.JS
 
 Antes de iniciar o projeto, verifique se o Node.js está instalado no seu sistema. 
 
-Caso ainda não tenha instalado, [Clique aqui](https://nodejs.org/) para fazer o download.
+Caso ainda não tenha instalado, Clique [aqui](https://nodejs.org/) para fazer o download.
 
 INSTALAR O NEDOMON
 
