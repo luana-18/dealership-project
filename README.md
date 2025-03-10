@@ -21,11 +21,13 @@ A funcionalidade de estoque permite o controle da quantidade de veículos dispon
 #  Passo a Passo para Executar o Projeto
 
 VERIFICAR O NODE.JS
+
 Antes de iniciar o projeto, verifique se o Node.js está instalado no seu sistema. 
 
-Caso ainda não tenha instalado, clique aqui para fazer o download.
+Caso ainda não tenha instalado, [Clique aqui](https://nodejs.org/) para fazer o download.
 
 INSTALAR O NEDOMON
+
 Abra sua IDE (Ambiente de Desenvolvimento Integrado) e instale a dependência nodemon para facilitar a execução do código. Utilize o seguinte comando no terminal:
 
 npm install --save nodemon
@@ -33,6 +35,7 @@ npm install --save nodemon
 O nodemon permite que o servidor seja reiniciado automaticamente sempre que alterações forem feitas no código, evitando a necessidade de fechar e reabrir o terminal manualmente.
 
 CONFIGURAR O BANCO DE DADOS
+
 O projeto está integrado a um banco de dados, e para configurá-lo corretamente, você precisará de um ambiente de desenvolvimento local.
 
 - Baixe o arquivo do banco de dados disponível.
@@ -40,6 +43,7 @@ O projeto está integrado a um banco de dados, e para configurá-lo corretamente
 - Crie um banco de dados com o nome tbconcessionaria para garantir a compatibilidade com o sistema.
   
 EXECUTAR O PROJETO
+
 Com o banco de dados configurado e o ambiente pronto, abra um terminal na sua IDE e execute o comando:
 
 npx nodemon server
